@@ -9,6 +9,13 @@ app.use(express.json());
 
 const rooms = [];
 const customers = [];
+
+app.get("/", function(request, response) {
+   
+  response.send("Welcome to Hall Booking App");
+
+} )
+
 //get(display) rooms
 app.get("/rooms", async function (request, response) {
   try {
